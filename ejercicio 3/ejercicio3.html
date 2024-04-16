@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora</title>
+
+		<link href="ejercicio3.css" rel="stylesheet" />
+		<script src="ejercicio3.js"></script>
+	</head>
+	<body>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="4"><button id="result">0</button></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<button onclick="del()" class="ac orange">AC</button>
+				</td>
+				<td>
+					<button class="orange" onclick="add('/')">
+						<img src="img/divide.svg" alt="divide button" />
+					</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><button onclick="add('7')">7</button></td>
+				<td><button onclick="add('8')">8</button></td>
+				<td><button onclick="add('9')">9</button></td>
+				<td>
+					<button class="orange" onclick="add('*')">
+						<img src="img/multiply.svg" alt="multiply button" />
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td><button onclick="add('4')">4</button></td>
+				<td><button onclick="add('5')">5</button></td>
+				<td><button onclick="add('6')">6</button></td>
+				<td>
+					<button class="orange" onclick="add('-')">
+						<img src="img/minus.svg" alt="minus button" />
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<td><button onclick="add('1')">1</button></td>
+				<td><button onclick="add('2')">2</button></td>
+				<td><button onclick="add('3')">3</button></td>
+				<td><button class="orange" onclick="add('+')">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="add('00')">00</button></td>
+				<td><button onclick="add('0')">0</button></td>
+				<td><button onclick="add('.')">,</button></td>
+				<td>
+					<button class="equal" onclick="calc()">
+						<img src="img/equal.svg" alt="equal button" />
+					</button>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
